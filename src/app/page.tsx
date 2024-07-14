@@ -24,7 +24,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     // Fetch the stock mentions data from the API
-    fetch("/api/stock/GME")
+    fetch("/api/stock/AMD")
       .then((response) => response.json())
       .then((data: StockMention[]) => {
         if (Array.isArray(data)) {

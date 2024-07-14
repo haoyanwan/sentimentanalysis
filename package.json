@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start-api": "cross-env-shell \"cd api && ./venv/bin/flask run --no-debugger || venv\\Scripts\\flask run --no-debugger\"",
+    "start-api": "cross-env-shell \"cd api && flask run\"",
     "lint": "next lint"
   },
   "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "jsonfile": "^6.1.0",
     "next": "14.2.4",
+    "pg": "^8.12.0",
     "react": "^18",
     "react-dom": "^18",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "tqdm": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",
